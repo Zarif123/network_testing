@@ -1,30 +1,86 @@
-[
-    "youtube.com",
-    "en.wikipedia.org",
-    "twitter.com",
-    "facebook.com",
-    "amazon.com",
-    "yelp.com",
-    "reddit.com",
-    "imdb.com",
-    "fandom.com",
-    "pinterest.com",
-    "tripadvisor.com",
-    "instagram.com",
-    "walmart.com",
-    "northwestern.edu",
-    "mccormick.northwestern.edu",
-    "kellogg.northwestern.edu",
-    "users.cs.northwestern.edu",
-    "it.eecs.northwestern.edu",
-    "uchicago.edu",
-    "illinois.edu",
-    "stevetarzia.com",
-    "clocktab.com",
-    "auditoryneuroscience.com",
-    "asee.org",
-    "gradeinflation.com",
-    "spacejam.com",
-    "pmichaud.com",
-    "kli.org"
-]
+{
+    "amazon.com": {
+        "scan_time": 1646717435.0
+    },
+    "asee.org": {
+        "scan_time": 1646717435.0
+    },
+    "auditoryneuroscience.com": {
+        "scan_time": 1646717435.0
+    },
+    "clocktab.com": {
+        "scan_time": 1646717435.0
+    },
+    "en.wikipedia.org": {
+        "scan_time": 1646717435.0
+    },
+    "facebook.com": {
+        "scan_time": 1646717435.0
+    },
+    "fandom.com": {
+        "scan_time": 1646717435.0
+    },
+    "gradeinflation.com": {
+        "scan_time": 1646717435.0
+    },
+    "illinois.edu": {
+        "scan_time": 1646717435.0
+    },
+    "imdb.com": {
+        "scan_time": 1646717435.0
+    },
+    "instagram.com": {
+        "scan_time": 1646717435.0
+    },
+    "it.eecs.northwestern.edu": {
+        "scan_time": 1646717435.0
+    },
+    "kellogg.northwestern.edu": {
+        "scan_time": 1646717435.0
+    },
+    "kli.org": {
+        "scan_time": 1646717435.0
+    },
+    "mccormick.northwestern.edu": {
+        "scan_time": 1646717435.0
+    },
+    "northwestern.edu": {
+        "scan_time": 1646717435.0
+    },
+    "pinterest.com": {
+        "scan_time": 1646717435.0
+    },
+    "pmichaud.com": {
+        "scan_time": 1646717435.0
+    },
+    "reddit.com": {
+        "scan_time": 1646717435.0
+    },
+    "spacejam.com": {
+        "scan_time": 1646717435.0
+    },
+    "stevetarzia.com": {
+        "scan_time": 1646717435.0
+    },
+    "tripadvisor.com": {
+        "scan_time": 1646717435.0
+    },
+    "twitter.com": {
+        "scan_time": 1646717435.0
+    },
+    "uchicago.edu": {
+        "scan_time": 1646717435.0
+    },
+    "users.cs.northwestern.edu": {
+        "scan_time": 1646717435.0
+    },
+    "walmart.com": {
+        "scan_time": 1646717435.0
+    },
+    "yelp.com": {
+        "scan_time": 1646717435.0
+    },
+    "youtube.com": {
+        "scan_time": 1646717435.0
+    }
+}
