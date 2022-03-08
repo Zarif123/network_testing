@@ -1,86 +1,191 @@
 {
     "amazon.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "176.32.103.205",
+            "205.251.242.103",
+            "54.239.28.85"
+        ],
+        "scan_time": 1646720489.0
     },
     "asee.org": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "20.49.104.48"
+        ],
+        "scan_time": 1646720489.0
     },
     "auditoryneuroscience.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "144.214.26.111"
+        ],
+        "scan_time": 1646720489.0
     },
     "clocktab.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "104.21.35.119",
+            "172.67.220.24"
+        ],
+        "scan_time": 1646720489.0
     },
     "en.wikipedia.org": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "208.80.154.224"
+        ],
+        "scan_time": 1646720489.0
     },
     "facebook.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "157.240.18.35"
+        ],
+        "scan_time": 1646720489.0
     },
     "fandom.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "151.101.192.194",
+            "151.101.0.194",
+            "151.101.64.194",
+            "151.101.128.194"
+        ],
+        "scan_time": 1646720489.0
     },
     "gradeinflation.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "51.79.45.180"
+        ],
+        "scan_time": 1646720489.0
     },
     "illinois.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "192.17.172.3"
+        ],
+        "scan_time": 1646720489.0
     },
     "imdb.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "52.94.225.248",
+            "52.94.228.167",
+            "52.94.237.74"
+        ],
+        "scan_time": 1646720489.0
     },
     "instagram.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "157.240.18.174"
+        ],
+        "scan_time": 1646720489.0
     },
     "it.eecs.northwestern.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "129.105.5.142"
+        ],
+        "scan_time": 1646720489.0
     },
     "kellogg.northwestern.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "165.124.129.72"
+        ],
+        "scan_time": 1646720489.0
     },
     "kli.org": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "172.67.132.72",
+            "104.21.4.169"
+        ],
+        "scan_time": 1646720489.0
     },
     "mccormick.northwestern.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "129.105.1.129"
+        ],
+        "scan_time": 1646720489.0
     },
     "northwestern.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "129.105.136.48"
+        ],
+        "scan_time": 1646720489.0
     },
     "pinterest.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "151.101.0.84",
+            "151.101.64.84",
+            "151.101.128.84",
+            "151.101.192.84"
+        ],
+        "scan_time": 1646720489.0
     },
     "pmichaud.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "23.254.203.248"
+        ],
+        "scan_time": 1646720489.0
     },
     "reddit.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "151.101.193.140",
+            "151.101.1.140",
+            "151.101.65.140",
+            "151.101.129.140"
+        ],
+        "scan_time": 1646720489.0
     },
     "spacejam.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "99.83.180.228",
+            "75.2.104.223"
+        ],
+        "scan_time": 1646720489.0
     },
     "stevetarzia.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "54.245.121.172"
+        ],
+        "scan_time": 1646720489.0
     },
     "tripadvisor.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "151.101.194.28",
+            "151.101.2.28",
+            "151.101.66.28",
+            "151.101.130.28"
+        ],
+        "scan_time": 1646720489.0
     },
     "twitter.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "104.244.42.65",
+            "104.244.42.193"
+        ],
+        "scan_time": 1646720489.0
     },
     "uchicago.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "34.200.129.209"
+        ],
+        "scan_time": 1646720489.0
     },
     "users.cs.northwestern.edu": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "165.124.180.20"
+        ],
+        "scan_time": 1646720489.0
     },
     "walmart.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "161.170.230.170",
+            "161.170.232.170"
+        ],
+        "scan_time": 1646720489.0
     },
     "yelp.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "146.75.76.116"
+        ],
+        "scan_time": 1646720489.0
     },
     "youtube.com": {
-        "scan_time": 1646717435.0
+        "ipv4_address": [
+            "172.217.5.14"
+        ],
+        "scan_time": 1646720489.0
     }
 }
