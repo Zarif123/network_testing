@@ -1,4 +1,173 @@
 {
+    "amazon.com": {
+        "geo_locations": [
+            "Ashburn, Virginia, United States",
+            "Ashburn, Virginia, United States",
+            "Ashburn, Virginia, United States"
+        ],
+        "http_server": "Server",
+        "insecure_http": true,
+        "ipv4_address": [
+            "176.32.103.205",
+            "205.251.242.103",
+            "54.239.28.85"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979393.0
+    },
+    "asee.org": {
+        "geo_locations": [
+            "Washington, Virginia, United States"
+        ],
+        "http_server": "Microsoft-IIS/10.0",
+        "insecure_http": true,
+        "ipv4_address": [
+            "20.49.104.48"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979514.0
+    },
+    "auditoryneuroscience.com": {
+        "geo_locations": [
+            "Central, Central and Western District, Hong Kong"
+        ],
+        "http_server": "Apache/2.4.41 (Ubuntu)",
+        "insecure_http": null,
+        "ipv4_address": [
+            "144.214.26.111"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979484.0
+    },
+    "clocktab.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "ipv4_address": [
+            "104.21.35.119",
+            "172.67.220.24"
+        ],
+        "ipv6_address": [
+            "2606:4700:3036::ac43:dc18",
+            "2606:4700:3030::6815:2377"
+        ],
+        "scan_time": 1646979480.0
+    },
+    "en.wikipedia.org": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "mw1385.eqiad.wmnet",
+        "insecure_http": true,
+        "ipv4_address": [
+            "208.80.154.224"
+        ],
+        "ipv6_address": [
+            "2620:0:861:ed1a::1"
+        ],
+        "scan_time": 1646979377.0
+    },
+    "facebook.com": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": null,
+        "insecure_http": true,
+        "ipv4_address": [
+            "157.240.18.35"
+        ],
+        "ipv6_address": [
+            "2a03:2880:f127:283:face:b00c:0:25de"
+        ],
+        "scan_time": 1646979388.0
+    },
+    "fandom.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States",
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": "envoy",
+        "insecure_http": true,
+        "ipv4_address": [
+            "151.101.128.194",
+            "151.101.192.194",
+            "151.101.0.194",
+            "151.101.64.194"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979412.0
+    },
+    "gradeinflation.com": {
+        "geo_locations": [
+            "Victoria, British Columbia, Canada"
+        ],
+        "http_server": "nginx",
+        "insecure_http": true,
+        "ipv4_address": [
+            "51.79.45.180"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979519.0
+    },
+    "illinois.edu": {
+        "geo_locations": [
+            "Urbana, Illinois, United States"
+        ],
+        "http_server": "Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.1e-fips",
+        "insecure_http": true,
+        "ipv4_address": [
+            "192.17.172.3"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979459.0
+    },
+    "imdb.com": {
+        "geo_locations": [
+            "Ashburn, Virginia, United States",
+            "Ashburn, Virginia, United States",
+            "Ashburn, Virginia, United States"
+        ],
+        "http_server": "Server",
+        "insecure_http": true,
+        "ipv4_address": [
+            "52.94.228.167",
+            "52.94.237.74",
+            "52.94.225.248"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979410.0
+    },
+    "instagram.com": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": null,
+        "insecure_http": true,
+        "ipv4_address": [
+            "157.240.18.174"
+        ],
+        "ipv6_address": [
+            "2a03:2880:f227:2e5:face:b00c:0:4420"
+        ],
+        "scan_time": 1646979427.0
+    },
+    "it.eecs.northwestern.edu": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
+        "http_server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
+        "insecure_http": true,
+        "ipv4_address": [
+            "129.105.5.142"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979453.0
+    },
     "kellogg.northwestern.edu": {
         "geo_locations": [
             ", , United States"
@@ -9,7 +178,24 @@
             "165.124.147.150"
         ],
         "ipv6_address": [],
-        "scan_time": 1646975502.0
+        "scan_time": 1646979445.0
+    },
+    "kli.org": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "ipv4_address": [
+            "172.67.132.72",
+            "104.21.4.169"
+        ],
+        "ipv6_address": [
+            "2606:4700:3035::ac43:8448",
+            "2606:4700:3033::6815:4a9"
+        ],
+        "scan_time": 1646979530.0
     },
     "mccormick.northwestern.edu": {
         "geo_locations": [
@@ -21,7 +207,7 @@
             "129.105.1.129"
         ],
         "ipv6_address": [],
-        "scan_time": 1646975498.0
+        "scan_time": 1646979440.0
     },
     "northwestern.edu": {
         "geo_locations": [
@@ -33,6 +219,174 @@
             "129.105.136.48"
         ],
         "ipv6_address": [],
-        "scan_time": 1646975494.0
+        "scan_time": 1646979436.0
+    },
+    "pinterest.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States",
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": null,
+        "insecure_http": true,
+        "ipv4_address": [
+            "151.101.0.84",
+            "151.101.64.84",
+            "151.101.128.84",
+            "151.101.192.84"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979417.0
+    },
+    "pmichaud.com": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "Apache",
+        "insecure_http": true,
+        "ipv4_address": [
+            "23.254.203.248"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979528.0
+    },
+    "reddit.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States",
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": "snooserv",
+        "insecure_http": true,
+        "ipv4_address": [
+            "151.101.129.140",
+            "151.101.193.140",
+            "151.101.1.140",
+            "151.101.65.140"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979401.0
+    },
+    "spacejam.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": "Apache/2.4.51 (Amazon) OpenSSL/1.0.2k-fips PHP/5.6.40",
+        "insecure_http": true,
+        "ipv4_address": [
+            "75.2.104.223",
+            "99.83.180.228"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979523.0
+    },
+    "stevetarzia.com": {
+        "geo_locations": [
+            "Boardman, Oregon, United States"
+        ],
+        "http_server": "Apache/2.2.34 (Amazon)",
+        "insecure_http": true,
+        "ipv4_address": [
+            "54.245.121.172"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979475.0
+    },
+    "tripadvisor.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States",
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": "envoy",
+        "insecure_http": true,
+        "ipv4_address": [
+            "151.101.194.28",
+            "151.101.2.28",
+            "151.101.66.28",
+            "151.101.130.28"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979421.0
+    },
+    "twitter.com": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "tsa_a",
+        "insecure_http": true,
+        "ipv4_address": [
+            "104.244.42.193"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979379.0
+    },
+    "uchicago.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": null,
+        "insecure_http": true,
+        "ipv4_address": [
+            "34.200.129.209"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979453.0
+    },
+    "users.cs.northwestern.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "Apache",
+        "insecure_http": true,
+        "ipv4_address": [
+            "165.124.180.20"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979452.0
+    },
+    "walmart.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States"
+        ],
+        "http_server": null,
+        "insecure_http": true,
+        "ipv4_address": [
+            "161.170.230.170",
+            "161.170.232.170"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979432.0
+    },
+    "yelp.com": {
+        "geo_locations": [
+            ", , Sweden"
+        ],
+        "http_server": "envoy",
+        "insecure_http": true,
+        "ipv4_address": [
+            "146.75.76.116"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646979396.0
+    },
+    "youtube.com": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "ESF",
+        "insecure_http": true,
+        "ipv4_address": [
+            "142.250.190.14"
+        ],
+        "ipv6_address": [
+            "2607:f8b0:4009:808::200e"
+        ],
+        "scan_time": 1646979372.0
     }
 }

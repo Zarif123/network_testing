@@ -3,12 +3,14 @@ import json
 import time
 import socket
 import subprocess
-import urllib3
+import requests
+#import urllib3
 import maxminddb
 
 null = None
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-http = urllib3.PoolManager()
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+#http = urllib3.PoolManager()
+requests.packages.urllib3.disable_warnings()
 
 # https://stackoverflow.com/a/81899 source for ip address checking
 def get_ipv4(domain):
@@ -36,8 +38,10 @@ def get_ipv6(domain):
     return addresses
 
 def get_server(domain):
-    r = http.request("GET", f"http://{domain}")
     print(domain)
+    #r = http.request("GET", f"http://{domain}", headers={'User-Agent': "Mozilla/5.0"})
+    r = requests.get(f"http://{domain}", headers={'User-Agent': "Mozilla/5.0"}, verify=False)
+    #print(domain, r.status)
     if 'Server' in r.headers.keys():
         http_server = r.headers['Server']
     else:
@@ -59,8 +63,11 @@ def get_geo(ip):
     return locations
 
 def get_insecure_http(domain):
-    result = subprocess.check_output(["nmap", domain], \
-        timeout=6, stderr=subprocess.STDOUT).decode("utf-8")
+    try:
+        result = subprocess.check_output(["nmap", domain], \
+        timeout=30, stderr=subprocess.STDOUT).decode("utf-8")
+    except subprocess.TimeoutExpired:
+        return null
 
     result = result[result.find("PORT"):]
     result = result[:result.find("\n\n")]
