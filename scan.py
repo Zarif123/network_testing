@@ -4,19 +4,18 @@ import time
 import socket
 import subprocess
 import requests
-#import urllib3
 import maxminddb
 
 null = None
-#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-#http = urllib3.PoolManager()
 requests.packages.urllib3.disable_warnings()
 
 # https://stackoverflow.com/a/81899 source for ip address checking
 def get_ipv4(domain):
-    result = subprocess.check_output(["nslookup", "-type=A", domain], \
-    timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
-    addresses = []
+    try:
+        result = subprocess.check_output(["nslookup", "-type=A", domain], \
+        timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
+    except subprocess.TimeoutExpired:
+        return null
     for i in result.split():
         try:
             socket.inet_pton(socket.AF_INET, i)
@@ -26,8 +25,11 @@ def get_ipv4(domain):
     return addresses[1:]
 
 def get_ipv6(domain):
-    result = subprocess.check_output(["nslookup", "-type=AAAA", domain], \
-    timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
+    try:
+        result = subprocess.check_output(["nslookup", "-type=AAAA", domain], \
+        timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
+    except subprocess.TimeoutExpired:
+        return null
     addresses = []
     for i in result.split():
         try:
@@ -49,6 +51,8 @@ def get_server(domain):
     return http_server
 
 def get_geo(ip):
+    if ip == null:
+        return null
     locations = []
     with maxminddb.open_database('GeoLite2-City.mmdb') as reader:
         for i in range(len(ip)):
@@ -81,6 +85,20 @@ def get_insecure_http(domain):
 
     return False
 
+def get_root(domain):
+    try:
+        echo = subprocess.Popen(("echo"), stdout=subprocess.PIPE)
+        result = subprocess.check_output(["openssl", "s_client", "-connect", f"{domain}:443"], \
+        timeout=30, stderr=subprocess.STDOUT, stdin=echo.stdout).decode("utf-8")
+    except subprocess.TimeoutExpired:
+        return null
+    result = result[result.find("Certificate chain"):]
+    result = result[:result.find("---")]
+    result = result[result.rfind("O ="):]
+    result = result[:result.find(",")]
+    result = result[result.find("O =")+4:]
+    return result
+
 def main():
     domains_text = sys.argv[1]
     output_json = sys.argv[2]
@@ -98,6 +116,7 @@ def main():
         domains[i]["ipv6_address"] = get_ipv6(i)
         domains[i]["http_server"] = get_server(i)
         domains[i]["insecure_http"] = get_insecure_http(i)
+        domains[i]["root_ca"] = get_root(i)
         domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
 
     with open(output_json, 'w') as f:

@@ -1,0 +1,60 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C = US, O = Unspecified, CN = it.ece.northwestern.edu, emailAddress = root@it.ece.northwestern.edu
+   i:C = US, O = Unspecified, OU = ca-2935191536304216725, CN = it.ece.northwestern.edu, emailAddress = root@it.ece.northwestern.edu
+ 1 s:C = US, O = Unspecified, OU = ca-2935191536304216725, CN = it.ece.northwestern.edu, emailAddress = root@it.ece.northwestern.edu
+   i:C = US, O = Unspecified, OU = ca-2935191536304216725, CN = it.ece.northwestern.edu, emailAddress = root@it.ece.northwestern.edu
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIE/zCCAuegAwIBAgIIdUaYUibNbD8wDQYJKoZIhvcNAQELBQAwgZMxCzAJBgNV
+BAYTAlVTMRQwEgYDVQQKDAtVbnNwZWNpZmllZDEfMB0GA1UECwwWY2EtMjkzNTE5
+MTUzNjMwNDIxNjcyNTEgMB4GA1UEAwwXaXQuZWNlLm5vcnRod2VzdGVybi5lZHUx
+KzApBgkqhkiG9w0BCQEWHHJvb3RAaXQuZWNlLm5vcnRod2VzdGVybi5lZHUwHhcN
+MjEwNjAxMjEyNjU4WhcNMjIwNjA2MjMwNjU4WjByMQswCQYDVQQGEwJVUzEUMBIG
+A1UECgwLVW5zcGVjaWZpZWQxIDAeBgNVBAMMF2l0LmVjZS5ub3J0aHdlc3Rlcm4u
+ZWR1MSswKQYJKoZIhvcNAQkBFhxyb290QGl0LmVjZS5ub3J0aHdlc3Rlcm4uZWR1
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvay+PZpcZP485eozETuc
+vgR8DzstDznVrg4BGCl08O/uu1rQPIgxy5YpOyT0c1F4vgfSriL1Yg8PCdZzqKaG
+rCbGDTQQsaiAO8uXFcSmUYZfGJu/nDiMbnRxQiG+NHN5jLt6d52c2+kFXt1cI38y
+12i+CcQn/6jvxtrgJEA44KC6MqE4C5ApQQYqdHvQ060l7K1d5Jh83oMKSPeZlGEe
+tQaLM3O40H4gpYvxbUStnvSFD06cXSugByp72muOI835z3mF4ZUAy5x5al8OCa/W
+3n0lOTaa/jHr2UbAa7u5u9unzyMkD4bfQLG9Edex5i4PAnfDRKG6FJstwm2yFfaQ
+uQIDAQABo3cwdTAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEw
+CQYDVR0TBAIwADAiBgNVHREEGzAZghdpdC5lY2Uubm9ydGh3ZXN0ZXJuLmVkdTAf
+BgNVHSMEGDAWgBQwq7d3hBwoUWESsJ+OvCAZMY15CDANBgkqhkiG9w0BAQsFAAOC
+AgEAm3qN3rCILmW2uflC59C+cwzZ6Dlzeo8n2fGmGDv/vN0SA3yWF5t6udDCo7/2
+9zRcRpMD7pSlNRf2vI1rwwLOZy4t0dTFcNgStxKoU0Sh/IaV8WSISHmH6nyqKtlI
+wKQ0ijNwymK0Ct4btvh+3H0HbvUG2NGRZQThO8kJ9srsKfXg3q4AuZrIysyD2bj+
+BqsaLwQS1psELQYr+LeoJ/5Eks2+2IqKOi5qT3991D3j/kOz3KCnLFonhZI/fn2/
+DexazMvQsURmdtDx+/qfg6yeyN8imIOGp2n0OxWCGmDeF4wbTtEN5pdAWK7Fcz3/
+CVQSH4TkMUnvjns5AOM5iPqIaFxzKpF8spYUsFsBFr6deaX7JTyszLj0I5eivS4a
++XQRwTkq0zXjx5ujfYpEZVAjmyBnrROx4wYeV8nOTRpwuD5gpGoEe0DZMIf2KlQ6
+uFxV7E2n2fdTq0Vzml7/+QykXi+Eq5xIPV/GRwJYDZVRL8D8fY/KlebZmb5rwJ4+
+GAIsOo8A5wVlIxdE8TpMmIcV/crzzm042Gfnw5E9Gi3TVJwzIrIp2Y4R/x2HX4b/
+v2MzP9nosXkfSRgmE2uaT/CSJXZ/MkSD73jZzNOXKZ32+2rllDDp1G31f+up09qt
+PPFXJxUsZU6We7Mt+xzgWQLVHQiI2aWAFGS08aVD5iGw2UM=
+-----END CERTIFICATE-----
+subject=C = US, O = Unspecified, CN = it.ece.northwestern.edu, emailAddress = root@it.ece.northwestern.edu
+
+issuer=C = US, O = Unspecified, OU = ca-2935191536304216725, CN = it.ece.northwestern.edu, emailAddress = root@it.ece.northwestern.edu
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3439 bytes and written 402 bytes
+Verification error: self signed certificate in certificate chain
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 19 (self signed certificate in certificate chain)
+---
