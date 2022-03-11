@@ -1,131 +1,117 @@
 {
     "asee.org": {
+        "geo_locations": [
+            "Washington, Virginia, United States"
+        ],
         "http_server": "Microsoft-IIS/10.0",
         "ipv4_address": [
             "20.49.104.48"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889716.0
+        "scan_time": 1646971093.0
     },
     "auditoryneuroscience.com": {
+        "geo_locations": [
+            "Central, Central and Western District, Hong Kong"
+        ],
         "http_server": "Apache/2.4.41 (Ubuntu)",
         "ipv4_address": [
             "144.214.26.111"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889715.0
+        "scan_time": 1646971092.0
     },
     "clocktab.com": {
+        "geo_locations": [
+            ", , United States",
+            ", , United States"
+        ],
         "http_server": "cloudflare",
         "ipv4_address": [
             "172.67.220.24",
             "104.21.35.119"
         ],
         "ipv6_address": [
-            "2606:4700:3036::ac43:dc18",
-            "2606:4700:3030::6815:2377"
+            "2606:4700:3030::6815:2377",
+            "2606:4700:3036::ac43:dc18"
         ],
-        "scan_time": 1646889715.0
-    },
-    "gradeinflation.com": {
-        "http_server": "nginx",
-        "ipv4_address": [
-            "51.79.45.180"
-        ],
-        "ipv6_address": [],
-        "scan_time": 1646889716.0
+        "scan_time": 1646971091.0
     },
     "illinois.edu": {
+        "geo_locations": [
+            "Urbana, Illinois, United States"
+        ],
         "http_server": "Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.1e-fips",
         "ipv4_address": [
             "192.17.172.3"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
+        "scan_time": 1646971091.0
     },
     "it.eecs.northwestern.edu": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
         "http_server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
         "ipv4_address": [
             "129.105.5.142"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
+        "scan_time": 1646971090.0
     },
     "kellogg.northwestern.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
         "http_server": "Microsoft-IIS/10.0",
         "ipv4_address": [
-            "165.124.129.72"
+            "165.124.147.150"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
-    },
-    "kli.org": {
-        "http_server": "cloudflare",
-        "ipv4_address": [
-            "172.67.132.72",
-            "104.21.4.169"
-        ],
-        "ipv6_address": [
-            "2606:4700:3035::ac43:8448",
-            "2606:4700:3033::6815:4a9"
-        ],
-        "scan_time": 1646889717.0
+        "scan_time": 1646971089.0
     },
     "mccormick.northwestern.edu": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
         "http_server": "Apache/2.4.7 (Ubuntu)",
         "ipv4_address": [
             "129.105.1.129"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
+        "scan_time": 1646971089.0
     },
     "northwestern.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
         "http_server": "Apache",
         "ipv4_address": [
             "129.105.136.48"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
-    },
-    "pmichaud.com": {
-        "http_server": "Apache",
-        "ipv4_address": [
-            "23.254.203.248"
-        ],
-        "ipv6_address": [],
-        "scan_time": 1646889717.0
-    },
-    "spacejam.com": {
-        "http_server": "Apache/2.4.51 (Amazon) OpenSSL/1.0.2k-fips PHP/5.6.40",
-        "ipv4_address": [
-            "99.83.180.228",
-            "75.2.104.223"
-        ],
-        "ipv6_address": [],
-        "scan_time": 1646889716.0
-    },
-    "stevetarzia.com": {
-        "http_server": "Apache/2.2.34 (Amazon)",
-        "ipv4_address": [
-            "54.245.121.172"
-        ],
-        "ipv6_address": [],
-        "scan_time": 1646889714.0
+        "scan_time": 1646971088.0
     },
     "uchicago.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
         "http_server": null,
         "ipv4_address": [
             "34.200.129.209"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
+        "scan_time": 1646971090.0
     },
     "users.cs.northwestern.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
         "http_server": "Apache",
         "ipv4_address": [
             "165.124.180.20"
         ],
         "ipv6_address": [],
-        "scan_time": 1646889714.0
+        "scan_time": 1646971090.0
     }
 }

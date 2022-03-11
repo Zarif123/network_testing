@@ -1,10 +1,10 @@
 import sys
 import json
 import time
-import re
 import socket
 import subprocess
 import urllib3
+import maxminddb
 
 null = None
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -44,6 +44,20 @@ def get_server(domain):
         http_server = null
     return http_server
 
+def get_geo(ip):
+    locations = []
+    with maxminddb.open_database('GeoLite2-City.mmdb') as reader:
+        for i in range(len(ip)):
+            #print(len(ip))
+            location = reader.get(ip[i])
+            print(location.keys())
+            city = location['city']['names']['en'] if 'city' in location.keys() else ""
+            state = location['subdivisions'][0]['names']['en'] if 'subdivisions' in location.keys() else ""
+            country = location['country']['names']['en'] if 'country' in location.keys() else ""
+            locations.append(f"{city}, {state}, {country}")
+
+    return locations
+
 def main():
     domains_text = sys.argv[1]
     output_json = sys.argv[2]
@@ -60,6 +74,7 @@ def main():
         domains[i]["ipv4_address"] = get_ipv4(i)
         domains[i]["ipv6_address"] = get_ipv6(i)
         domains[i]["http_server"] = get_server(i)
+        domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
 
     with open(output_json, 'w') as f:
         json.dump(domains, f, sort_keys=True, indent=4)
