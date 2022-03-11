@@ -1,0 +1,38 @@
+{
+    "kellogg.northwestern.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "Microsoft-IIS/10.0",
+        "insecure_http": true,
+        "ipv4_address": [
+            "165.124.147.150"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646975502.0
+    },
+    "mccormick.northwestern.edu": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
+        "http_server": "Apache/2.4.7 (Ubuntu)",
+        "insecure_http": true,
+        "ipv4_address": [
+            "129.105.1.129"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646975498.0
+    },
+    "northwestern.edu": {
+        "geo_locations": [
+            ", , United States"
+        ],
+        "http_server": "Apache",
+        "insecure_http": true,
+        "ipv4_address": [
+            "129.105.136.48"
+        ],
+        "ipv6_address": [],
+        "scan_time": 1646975494.0
+    }
+}

@@ -1,10 +1,3 @@
 northwestern.edu
 mccormick.northwestern.edu
 kellogg.northwestern.edu
-users.cs.northwestern.edu
-it.eecs.northwestern.edu
-uchicago.edu
-illinois.edu
-clocktab.com
-auditoryneuroscience.com
-asee.org
