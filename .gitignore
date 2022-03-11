@@ -11,6 +11,7 @@ __pycache__/
 *.cfg
 activate
 *.ps1
+tmp_env/
 
 # Distribution / packaging
 .Python
