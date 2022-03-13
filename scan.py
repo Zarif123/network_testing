@@ -122,6 +122,30 @@ def get_root(domain):
     result = result[result.find("O =")+4:]
     return result
 
+def get_rrt_range(addresses):
+    try:
+        all_rtt = []
+        for address in addresses:
+
+            result = subprocess.run(["sh", "-c", f"time echo -e \'x1dclose\x0d\' | telnet {address} 443"], \
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+            output = result.stderr.decode('utf-8')
+            output = output[output.find("real"):]
+            output = output[:output.find("\n")]
+  
+            real_time = output.split()[1]
+            real_time = float(real_time[real_time.find("m")+1:real_time.find("s")])
+            real_time = int(real_time * 1000)
+
+            all_rtt.append(real_time)
+
+        print([min(all_rtt), max(all_rtt)])
+        return [min(all_rtt), max(all_rtt)]
+
+    except subprocess.TimeoutExpired:
+        return null
+
 def main():
     domains_text = sys.argv[1]
     output_json = sys.argv[2]
@@ -141,7 +165,8 @@ def main():
         # domains[i]["insecure_http"] = get_insecure_http(i)
         # domains[i]["root_ca"] = get_root(i)
         # domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
-        domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
+        # domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
+        domains[i]["rtt_range"] = get_rrt_range(domains[i]["ipv4_address"])
 
     with open(output_json, 'w') as f:
         json.dump(domains, f, sort_keys=True, indent=4)
