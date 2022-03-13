@@ -12,6 +12,7 @@ __pycache__/
 activate
 *.ps1
 tmp_env/
+cs340-project4/
 
 # Distribution / packaging
 .Python
