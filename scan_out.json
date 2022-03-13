@@ -1,86 +1,250 @@
 {
     "amazon.com": {
-        "root_ca": "\"VeriSign"
+        "ipv4_address": [
+            "54.239.28.85",
+            "176.32.103.205",
+            "205.251.242.103"
+        ],
+        "rdns_names": []
     },
     "asee.org": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "20.49.104.48"
+        ],
+        "rdns_names": []
     },
     "auditoryneuroscience.com": {
-        "root_ca": "Digital Signature Trust Co."
+        "ipv4_address": [
+            "144.214.26.111"
+        ],
+        "rdns_names": [
+            "cpccspc.cityu.edu.hk.",
+            "spain.cityu.edu.hk."
+        ]
     },
     "clocktab.com": {
-        "root_ca": "Baltimore"
+        "ipv4_address": [
+            "104.21.35.119",
+            "172.67.220.24"
+        ],
+        "rdns_names": []
     },
     "en.wikipedia.org": {
-        "root_ca": "Digital Signature Trust Co."
+        "ipv4_address": [
+            "208.80.154.224"
+        ],
+        "rdns_names": [
+            "ns0.wikimedia.org.",
+            "ns1.wikimedia.org.",
+            "ns2.wikimedia.org."
+        ]
     },
     "facebook.com": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "157.240.18.35"
+        ],
+        "rdns_names": [
+            "a.ns.facebook.com.",
+            "b.ns.facebook.com."
+        ]
     },
     "fandom.com": {
-        "root_ca": "GlobalSign"
+        "ipv4_address": [
+            "151.101.64.194",
+            "151.101.128.194",
+            "151.101.192.194",
+            "151.101.0.194"
+        ],
+        "rdns_names": []
     },
     "gradeinflation.com": {
-        "root_ca": "Digital Signature Trust Co."
+        "ipv4_address": [
+            "51.79.45.180"
+        ],
+        "rdns_names": [
+            "dns10.ovh.ca.",
+            "ns10.ovh.ca."
+        ]
     },
     "illinois.edu": {
-        "root_ca": "Comodo CA Limited"
+        "ipv4_address": [
+            "192.17.172.3"
+        ],
+        "rdns_names": [
+            "dns1.illinois.edu.",
+            "dns2.illinois.edu.",
+            "dns3.illinois.edu."
+        ]
     },
     "imdb.com": {
-        "root_ca": "\"Starfield Technologies"
+        "ipv4_address": [
+            "52.94.228.167",
+            "52.94.237.74",
+            "52.94.225.248"
+        ],
+        "rdns_names": []
     },
     "instagram.com": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "157.240.18.174"
+        ],
+        "rdns_names": [
+            "b.ns.facebook.com.",
+            "a.ns.facebook.com."
+        ]
     },
     "it.eecs.northwestern.edu": {
-        "root_ca": null
+        "ipv4_address": [
+            "129.105.5.142"
+        ],
+        "rdns_names": []
     },
     "kellogg.northwestern.edu": {
-        "root_ca": "Comodo CA Limited"
+        "ipv4_address": [
+            "165.124.129.72"
+        ],
+        "rdns_names": []
     },
     "kli.org": {
-        "root_ca": "Baltimore"
+        "ipv4_address": [
+            "104.21.4.169",
+            "172.67.132.72"
+        ],
+        "rdns_names": []
     },
     "mccormick.northwestern.edu": {
-        "root_ca": "Comodo CA Limited"
+        "ipv4_address": [
+            "129.105.1.129"
+        ],
+        "rdns_names": [
+            "accuvax.northwestern.edu.",
+            "ns3.northwestern.edu.",
+            "cicada.northwestern.edu."
+        ]
     },
     "northwestern.edu": {
-        "root_ca": "The USERTRUST Network"
+        "ipv4_address": [
+            "129.105.136.48"
+        ],
+        "rdns_names": [
+            "cicada.northwestern.edu.",
+            "accuvax.northwestern.edu.",
+            "ns3.northwestern.edu."
+        ]
     },
     "pinterest.com": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "151.101.64.84",
+            "151.101.128.84",
+            "151.101.192.84",
+            "151.101.0.84"
+        ],
+        "rdns_names": []
     },
     "pmichaud.com": {
-        "root_ca": "Comodo CA Limited"
+        "ipv4_address": [
+            "23.254.203.248"
+        ],
+        "rdns_names": [
+            "y.arin.net.",
+            "z.arin.net.",
+            "arin.authdns.ripe.net.",
+            "r.arin.net.",
+            "u.arin.net.",
+            "x.arin.net."
+        ]
     },
     "reddit.com": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "151.101.129.140",
+            "151.101.193.140",
+            "151.101.1.140",
+            "151.101.65.140"
+        ],
+        "rdns_names": []
     },
     "spacejam.com": {
-        "root_ca": "GlobalSign"
+        "ipv4_address": [
+            "99.83.180.228",
+            "75.2.104.223"
+        ],
+        "rdns_names": [
+            "ns-5.awsdns-00.com.",
+            "ns-591.awsdns-09.net.",
+            "ns-1482.awsdns-57.org.",
+            "ns-2033.awsdns-62.co.uk.",
+            "ns-367.awsdns-45.com.",
+            "ns-936.awsdns-53.net.",
+            "ns-1200.awsdns-22.org.",
+            "ns-1950.awsdns-51.co.uk."
+        ]
     },
     "stevetarzia.com": {
-        "root_ca": "Digital Signature Trust Co."
+        "ipv4_address": [
+            "54.245.121.172"
+        ],
+        "rdns_names": [
+            "ns3-24-us-west-2.ec2-rdns.amazonaws.com.",
+            "ns4-24-us-west-2.ec2-rdns.amazonaws.com.",
+            "ns1-24-us-west-2.ec2-rdns.amazonaws.com.",
+            "ns2-24-us-west-2.ec2-rdns.amazonaws.com."
+        ]
     },
     "tripadvisor.com": {
-        "root_ca": "GlobalSign"
+        "ipv4_address": [
+            "151.101.2.28",
+            "151.101.66.28",
+            "151.101.130.28",
+            "151.101.194.28"
+        ],
+        "rdns_names": []
     },
     "twitter.com": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "104.244.42.193",
+            "104.244.42.65"
+        ],
+        "rdns_names": []
     },
     "uchicago.edu": {
-        "root_ca": "The USERTRUST Network"
+        "ipv4_address": [
+            "34.200.129.209"
+        ],
+        "rdns_names": [
+            "ns3-24-us-east-1.ec2-rdns.amazonaws.com.",
+            "ns4-24-us-east-1.ec2-rdns.amazonaws.com.",
+            "ns1-24-us-east-1.ec2-rdns.amazonaws.com.",
+            "ns2-24-us-east-1.ec2-rdns.amazonaws.com."
+        ]
     },
     "users.cs.northwestern.edu": {
-        "root_ca": "The USERTRUST Network"
+        "ipv4_address": [
+            "165.124.180.20"
+        ],
+        "rdns_names": []
     },
     "walmart.com": {
-        "root_ca": "GlobalSign"
+        "ipv4_address": [
+            "161.170.230.170",
+            "161.170.232.170"
+        ],
+        "rdns_names": []
     },
     "yelp.com": {
-        "root_ca": "DigiCert Inc"
+        "ipv4_address": [
+            "199.232.76.116"
+        ],
+        "rdns_names": []
     },
     "youtube.com": {
-        "root_ca": "GlobalSign nv-sa"
+        "ipv4_address": [
+            "142.250.191.142"
+        ],
+        "rdns_names": [
+            "ns3.google.com.",
+            "ns4.google.com.",
+            "ns1.google.com.",
+            "ns2.google.com."
+        ]
     }
 }
