@@ -5,6 +5,7 @@ import socket
 import subprocess
 import requests
 import maxminddb
+import re
 
 null = None
 requests.packages.urllib3.disable_warnings()
@@ -16,6 +17,7 @@ def get_ipv4(domain):
         timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
     except subprocess.TimeoutExpired:
         return null
+    addresses = []
     for i in result.split():
         try:
             socket.inet_pton(socket.AF_INET, i)
@@ -49,6 +51,27 @@ def get_server(domain):
     else:
         http_server = null
     return http_server
+
+def get_rdns_names(addresses):
+    try:
+        all_rdns = []
+        for address in addresses:
+            result = subprocess.check_output(["nslookup", "-type=PTR", address], \
+            timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
+
+            nameserver_inds = [r.start() for r in re.finditer('nameserver = ', result)]
+            rdns_inds = list(map(lambda ind: ind + len('nameserver = '), nameserver_inds))
+            
+            rdns = [result[rdns_i:] for rdns_i in rdns_inds]
+            rdns = [res[:res.find("\n")] for res in rdns]
+
+            all_rdns += rdns
+
+        return all_rdns
+
+    except:
+        return []
+
 
 def get_geo(ip):
     if ip == null:
@@ -111,13 +134,14 @@ def main():
         domains[i] = dict()
 
     for i in domains:
-        domains[i]["scan_time"] = time.mktime(time.localtime())
+        # domains[i]["scan_time"] = time.mktime(time.localtime())
         domains[i]["ipv4_address"] = get_ipv4(i)
-        domains[i]["ipv6_address"] = get_ipv6(i)
-        domains[i]["http_server"] = get_server(i)
-        domains[i]["insecure_http"] = get_insecure_http(i)
-        domains[i]["root_ca"] = get_root(i)
-        domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
+        # domains[i]["ipv6_address"] = get_ipv6(i)
+        # domains[i]["http_server"] = get_server(i)
+        # domains[i]["insecure_http"] = get_insecure_http(i)
+        # domains[i]["root_ca"] = get_root(i)
+        # domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
+        domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
 
     with open(output_json, 'w') as f:
         json.dump(domains, f, sort_keys=True, indent=4)
