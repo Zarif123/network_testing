@@ -146,6 +146,36 @@ def get_rrt_range(addresses):
     except subprocess.TimeoutExpired:
         return null
 
+def get_tls_versions(domain):
+    # TLS v1.0-1.2
+    tls_versions = []
+
+    try:
+        result = subprocess.check_output(["nmap", domain], \
+        timeout=30, stderr=subprocess.STDOUT).decode("utf-8")
+    except subprocess.TimeoutExpired:
+        return null
+
+    tls_inds = [r.start() for r in re.finditer('TLSv', result)]
+
+    for i in tls_inds:
+        curr_output = result[i:]
+        curr_output = curr_output[:curr_output.find(":")]
+        tls_versions.append(curr_output)
+
+    # TLS v1.3
+    try:
+        echo = subprocess.Popen(("echo"), stdout=subprocess.PIPE)
+        result = subprocess.check_output(["openssl", "s_client", "-connect", "tls1_3", f"{domain}:443"], \
+        timeout=30, stderr=subprocess.STDOUT, stdin=echo.stdout).decode("utf-8")
+    except subprocess.TimeoutExpired:
+        return null
+    
+    result = result[result.find("TLSv"):]
+    result = result[:result.find(",")]
+    print(f"1.3: {result}")
+    tls_versions.append(result)
+    
 def main():
     domains_text = sys.argv[1]
     output_json = sys.argv[2]
@@ -159,14 +189,15 @@ def main():
 
     for i in domains:
         # domains[i]["scan_time"] = time.mktime(time.localtime())
-        domains[i]["ipv4_address"] = get_ipv4(i)
+        #domains[i]["ipv4_address"] = get_ipv4(i)
         # domains[i]["ipv6_address"] = get_ipv6(i)
         # domains[i]["http_server"] = get_server(i)
         # domains[i]["insecure_http"] = get_insecure_http(i)
         # domains[i]["root_ca"] = get_root(i)
         # domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
         # domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
-        domains[i]["rtt_range"] = get_rrt_range(domains[i]["ipv4_address"])
+        #domains[i]["rtt_range"] = get_rrt_range(domains[i]["ipv4_address"])
+        domains[i]["tls_versions"] = get_tls_versions(i)
 
     with open(output_json, 'w') as f:
         json.dump(domains, f, sort_keys=True, indent=4)
