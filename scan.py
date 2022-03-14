@@ -151,30 +151,33 @@ def get_tls_versions(domain):
     tls_versions = []
 
     try:
-        result = subprocess.check_output(["nmap", domain], \
-        timeout=30, stderr=subprocess.STDOUT).decode("utf-8")
+        result = subprocess.run(["nmap", "--script", "ssl-enum-ciphers", "-p", "443", domain], \
+        timeout=30, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except subprocess.TimeoutExpired:
         return null
 
-    tls_inds = [r.start() for r in re.finditer('TLSv', result)]
+    output = result.stdout.decode('utf-8')
+    tls_inds = [r.start() for r in re.finditer('TLSv', output)]
 
     for i in tls_inds:
-        curr_output = result[i:]
+        curr_output = output[i:]
         curr_output = curr_output[:curr_output.find(":")]
-        tls_versions.append(curr_output)
+        if curr_output: tls_versions.append(curr_output)
 
     # TLS v1.3
     try:
         echo = subprocess.Popen(("echo"), stdout=subprocess.PIPE)
-        result = subprocess.check_output(["openssl", "s_client", "-connect", "tls1_3", f"{domain}:443"], \
-        timeout=30, stderr=subprocess.STDOUT, stdin=echo.stdout).decode("utf-8")
+        result = subprocess.run(["openssl", "s_client", "-tls1_3", "-connect", f"{domain}:443"], \
+        timeout=30, stdin=echo.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except subprocess.TimeoutExpired:
         return null
     
+    result = result.stdout.decode('utf-8') 
     result = result[result.find("TLSv"):]
     result = result[:result.find(",")]
-    print(f"1.3: {result}")
-    tls_versions.append(result)
+    if result: tls_versions.append(result)
+
+    return tls_versions
     
 def main():
     domains_text = sys.argv[1]
