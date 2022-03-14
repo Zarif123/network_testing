@@ -121,13 +121,13 @@ def percent_table(scan_data):
             if info == 'tls_versions':
                 for tls_version in scan_data[domain][info]:
                     tls_versions_counts[tls_version] += 1
-            if info == 'insecure_http' and info:
+            if info == 'insecure_http' and scan_data[domain][info]:
                 insecure_http_count += 1
-            if info == 'redirect_to_https' and info:
+            if info == 'redirect_to_https' and scan_data[domain][info]:
                 redirect_to_https_count += 1
-            if info == 'hsts' and info:
+            if info == 'hsts' and scan_data[domain][info]:
                 hsts_count += 1
-            if info == 'ipv6_address' and info:
+            if info == 'ipv6_address' and scan_data[domain][info]:
                 ipv6_count += 1
 
     table_headers = [["SSLv1", "SSLv2", "TLSv1.0", "TLSv1.1", "TLSv1.2", "TLSv1.3", "Insecure HTTP", "Redirect to HTTPS", "HSTS", "IPv6 Addresses"]]
