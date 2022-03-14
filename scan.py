@@ -178,7 +178,22 @@ def get_tls_versions(domain):
     if result: tls_versions.append(result)
 
     return tls_versions
-    
+
+def get_redirect_to_https(domain):
+    r = requests.get(f"http://{domain}:80", headers={'User-Agent': "Mozilla/5.0"}, verify=False)
+    url = r.url
+    history = r.history
+    status_code = r.status_code
+
+    print(f"one history: {history[0]}")
+    old_status_codes = list(map(lambda res: res.status_code, history))
+    print(f"old status codes: {old_status_codes}")
+    filtered_history = list(filter(lambda res: res >= 300 and res < 400, old_status_codes)) 
+    print(f"filtered history: {filtered_history}")
+    protocol = url[:url.find(":")]
+    print(f"protocol: {protocol}")
+    return protocol == 'https' and filtered_history and status_code >= 200 and status_code < 300
+
 def main():
     domains_text = sys.argv[1]
     output_json = sys.argv[2]
@@ -200,7 +215,8 @@ def main():
         # domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
         # domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
         #domains[i]["rtt_range"] = get_rrt_range(domains[i]["ipv4_address"])
-        domains[i]["tls_versions"] = get_tls_versions(i)
+        # domains[i]["tls_versions"] = get_tls_versions(i)
+        domains[i]["redirect_to_https"] = get_redirect_to_https(i)
 
     with open(output_json, 'w') as f:
         json.dump(domains, f, sort_keys=True, indent=4)

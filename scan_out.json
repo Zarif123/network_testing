@@ -1,17 +1,8 @@
 {
     "google.com": {
-        "tls_versions": [
-            "TLSv1.0",
-            "TLSv1.1",
-            "TLSv1.2",
-            "TLSv1.3"
-        ]
+        "redirect_to_https": false
     },
     "stevetarzia.com": {
-        "tls_versions": [
-            "TLSv1.0",
-            "TLSv1.1",
-            "TLSv1.2"
-        ]
+        "redirect_to_https": true
     }
 }
