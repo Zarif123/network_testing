@@ -42,10 +42,7 @@ def get_ipv6(domain):
     return addresses
 
 def get_server(domain):
-    print(domain)
-    #r = http.request("GET", f"http://{domain}", headers={'User-Agent': "Mozilla/5.0"})
     r = requests.get(f"http://{domain}", headers={'User-Agent': "Mozilla/5.0"}, verify=False)
-    #print(domain, r.status)
     if 'Server' in r.headers.keys():
         http_server = r.headers['Server']
     else:
@@ -79,9 +76,7 @@ def get_geo(ip):
     locations = []
     with maxminddb.open_database('GeoLite2-City.mmdb') as reader:
         for i in range(len(ip)):
-            #print(len(ip))
             location = reader.get(ip[i])
-            #print(location.keys())
             city = location['city']['names']['en'] if 'city' in location.keys() else ""
             state = location['subdivisions'][0]['names']['en'] if 'subdivisions' in location.keys() else ""
             country = location['country']['names']['en'] if 'country' in location.keys() else ""
@@ -140,7 +135,6 @@ def get_rrt_range(addresses):
 
             all_rtt.append(real_time)
 
-        print([min(all_rtt), max(all_rtt)])
         return [min(all_rtt), max(all_rtt)]
 
     except subprocess.TimeoutExpired:
@@ -185,14 +179,15 @@ def get_redirect_to_https(domain):
     history = r.history
     status_code = r.status_code
 
-    print(f"one history: {history[0]}")
     old_status_codes = list(map(lambda res: res.status_code, history))
-    print(f"old status codes: {old_status_codes}")
     filtered_history = list(filter(lambda res: res >= 300 and res < 400, old_status_codes)) 
-    print(f"filtered history: {filtered_history}")
     protocol = url[:url.find(":")]
-    print(f"protocol: {protocol}")
+
     return protocol == 'https' and filtered_history and status_code >= 200 and status_code < 300
+
+def get_hsts(domain):
+    r = requests.get(f"http://{domain}:80", headers={'User-Agent': "Mozilla/5.0"}, verify=False)
+    return 'Strict-Transport-Security' in r.headers.keys()
 
 def main():
     domains_text = sys.argv[1]
@@ -206,17 +201,18 @@ def main():
         domains[i] = dict()
 
     for i in domains:
-        # domains[i]["scan_time"] = time.mktime(time.localtime())
-        #domains[i]["ipv4_address"] = get_ipv4(i)
-        # domains[i]["ipv6_address"] = get_ipv6(i)
-        # domains[i]["http_server"] = get_server(i)
-        # domains[i]["insecure_http"] = get_insecure_http(i)
-        # domains[i]["root_ca"] = get_root(i)
-        # domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
-        # domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
-        #domains[i]["rtt_range"] = get_rrt_range(domains[i]["ipv4_address"])
-        # domains[i]["tls_versions"] = get_tls_versions(i)
+        domains[i]["scan_time"] = time.mktime(time.localtime())
+        domains[i]["ipv4_address"] = get_ipv4(i)
+        domains[i]["ipv6_address"] = get_ipv6(i)
+        domains[i]["http_server"] = get_server(i)
+        domains[i]["insecure_http"] = get_insecure_http(i)
+        domains[i]["root_ca"] = get_root(i)
+        domains[i]["geo_locations"] = get_geo(domains[i]["ipv4_address"])
+        domains[i]["rdns_names"] = get_rdns_names(domains[i]["ipv4_address"])
+        domains[i]["rtt_range"] = get_rrt_range(domains[i]["ipv4_address"])
+        domains[i]["tls_versions"] = get_tls_versions(i)
         domains[i]["redirect_to_https"] = get_redirect_to_https(i)
+        domains[i]["hsts"] = get_hsts(i)
 
     with open(output_json, 'w') as f:
         json.dump(domains, f, sort_keys=True, indent=4)
