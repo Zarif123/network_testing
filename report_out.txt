@@ -1,1 +1,163 @@
-{'asee.org': {'geo_locations': ['Washington, Virginia, United States'], 'http_server': 'Microsoft-IIS/10.0', 'ipv4_address': ['20.49.104.48'], 'ipv6_address': [], 'scan_time': 1646971093.0}, 'auditoryneuroscience.com': {'geo_locations': ['Central, Central and Western District, Hong Kong'], 'http_server': 'Apache/2.4.41 (Ubuntu)', 'ipv4_address': ['144.214.26.111'], 'ipv6_address': [], 'scan_time': 1646971092.0}, 'clocktab.com': {'geo_locations': [', , United States', ', , United States'], 'http_server': 'cloudflare', 'ipv4_address': ['172.67.220.24', '104.21.35.119'], 'ipv6_address': ['2606:4700:3030::6815:2377', '2606:4700:3036::ac43:dc18'], 'scan_time': 1646971091.0}, 'illinois.edu': {'geo_locations': ['Urbana, Illinois, United States'], 'http_server': 'Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.1e-fips', 'ipv4_address': ['192.17.172.3'], 'ipv6_address': [], 'scan_time': 1646971091.0}, 'it.eecs.northwestern.edu': {'geo_locations': ['Chicago, Illinois, United States'], 'http_server': 'Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k', 'ipv4_address': ['129.105.5.142'], 'ipv6_address': [], 'scan_time': 1646971090.0}, 'kellogg.northwestern.edu': {'geo_locations': [', , United States'], 'http_server': 'Microsoft-IIS/10.0', 'ipv4_address': ['165.124.147.150'], 'ipv6_address': [], 'scan_time': 1646971089.0}, 'mccormick.northwestern.edu': {'geo_locations': ['Chicago, Illinois, United States'], 'http_server': 'Apache/2.4.7 (Ubuntu)', 'ipv4_address': ['129.105.1.129'], 'ipv6_address': [], 'scan_time': 1646971089.0}, 'northwestern.edu': {'geo_locations': [', , United States'], 'http_server': 'Apache', 'ipv4_address': ['129.105.136.48'], 'ipv6_address': [], 'scan_time': 1646971088.0}, 'uchicago.edu': {'geo_locations': [', , United States'], 'http_server': None, 'ipv4_address': ['34.200.129.209'], 'ipv6_address': [], 'scan_time': 1646971090.0}, 'users.cs.northwestern.edu': {'geo_locations': [', , United States'], 'http_server': 'Apache', 'ipv4_address': ['165.124.180.20'], 'ipv6_address': [], 'scan_time': 1646971090.0}}
+Table 1: Scanner Information
+          Domain                                                            Geo Locations                                                   HSTS                           HTTP Server                           Insecure HTTP Server                                IPv4 Addresses                                                       IPv6 Addresses                                                                                                                           RDNS Names                                                                                                     Redirect to HTTPS             Root CA             RTT Range     Scan Time                     TLS Versions                
+============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+amazon.com                   ['Ashburn, Virginia, United States', 'Ashburn, Virginia, United States', 'Ashburn, Virginia, United States']   True    Server                                                       True                   ['205.251.242.103', '54.239.28.85', '176.32.103.205']                       []                                                           []                                                                                                                                                                                                               True                "VeriSign                     [29, 79]     1647289017.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2']           
+asee.org                     ['Washington, Virginia, United States']                                                                        False   Microsoft-IIS/10.0                                           True                   ['20.49.104.48']                                                            []                                                           []                                                                                                                                                                                                               True                DigiCert Inc                  [107, 107]   1647289230.0   ['TLSv1.2']                                 
+auditoryneuroscience.com     ['Central, Central and Western District, Hong Kong']                                                           False   Apache/2.4.41 (Ubuntu)                                       None                   ['144.214.26.111']                                                          []                                                           ['spain.cityu.edu.hk.', 'cpccspc.cityu.edu.hk.']                                                                                                                                                                 False               Digital Signature Trust Co.   [227, 227]   1647289168.0   ['TLSv1.2', 'TLSv1.3']                      
+clocktab.com                 [', , United States', ', , United States']                                                                     False   cloudflare                                                   True                   ['104.21.35.119', '172.67.220.24']                                          ['2606:4700:3036::ac43:dc18', '2606:4700:3030::6815:2377']   []                                                                                                                                                                                                               True                Baltimore                     [3, 4]       1647289163.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+en.wikipedia.org             [', , United States']                                                                                          True    mw1393.eqiad.wmnet                                           True                   ['208.80.154.224']                                                          ['2620:0:861:ed1a::1']                                       ['ns1.wikimedia.org.', 'ns2.wikimedia.org.', 'ns0.wikimedia.org.']                                                                                                                                               True                Digital Signature Trust Co.   [31, 31]     1647288986.0   ['TLSv1.2', 'TLSv1.3']                      
+facebook.com                 [', , United States']                                                                                          True    None                                                         True                   ['157.240.18.35']                                                           ['2a03:2880:f127:283:face:b00c:0:25de']                      ['a.ns.facebook.com.', 'b.ns.facebook.com.']                                                                                                                                                                     True                DigiCert Inc                  [2, 2]       1647289010.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+fandom.com                   [', , United States', ', , United States', ', , United States', ', , United States']                           False   envoy                                                        True                   ['151.101.128.194', '151.101.192.194', '151.101.0.194', '151.101.64.194']   []                                                           []                                                                                                                                                                                                               True                GlobalSign                    [3, 3]       1647289055.0   ['TLSv1.2', 'TLSv1.3']                      
+gradeinflation.com           ['Victoria, British Columbia, Canada']                                                                         False   nginx                                                        True                   ['51.79.45.180']                                                            []                                                           ['dns10.ovh.ca.', 'ns10.ovh.ca.']                                                                                                                                                                                True                Digital Signature Trust Co.   [20, 20]     1647289241.0   ['TLSv1.2', 'TLSv1.3']                      
+illinois.edu                 ['Urbana, Illinois, United States']                                                                            False   Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.1e-fips   None                   ['192.17.172.3']                                                            []                                                           ['dns2.illinois.edu.', 'dns3.illinois.edu.', 'dns1.illinois.edu.']                                                                                                                                               True                Comodo CA Limited             [6, 6]       1647289118.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2']           
+imdb.com                     ['Ashburn, Virginia, United States', 'Ashburn, Virginia, United States', 'Ashburn, Virginia, United States']   True    Server                                                       True                   ['52.94.237.74', '52.94.225.248', '52.94.228.167']                          []                                                           []                                                                                                                                                                                                               True                "Starfield Technologies       [23, 41]     1647289047.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2']           
+instagram.com                [', , United States']                                                                                          True    None                                                         True                   ['157.240.18.174']                                                          ['2a03:2880:f227:2e5:face:b00c:0:4420']                      ['a.ns.facebook.com.', 'b.ns.facebook.com.']                                                                                                                                                                     True                DigiCert Inc                  [2, 2]       1647289076.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+it.eecs.northwestern.edu     ['Chicago, Illinois, United States']                                                                           False   Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k      True                   ['129.105.5.142']                                                           []                                                           []                                                                                                                                                                                                               False               Unspecified                   [2, 2]       1647289111.0   ['TLSv1.2', 'TLSv1.3']                      
+kellogg.northwestern.edu     [', , United States']                                                                                          False   Microsoft-IIS/10.0                                           True                   ['165.124.147.150']                                                         []                                                           ['cicada.northwestern.edu.', 'accuvax.northwestern.edu.', 'ns3.northwestern.edu.']                                                                                                                               True                Comodo CA Limited             [2, 2]       1647289104.0   ['TLSv1.2']                                 
+kli.org                      [', , United States', ', , United States']                                                                     False   cloudflare                                                   True                   ['104.21.4.169', '172.67.132.72']                                           ['2606:4700:3035::ac43:8448', '2606:4700:3033::6815:4a9']    []                                                                                                                                                                                                               True                Baltimore                     [3, 4]       1647289262.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+mccormick.northwestern.edu   ['Chicago, Illinois, United States']                                                                           False   Apache/2.4.7 (Ubuntu)                                        True                   ['129.105.1.129']                                                           []                                                           ['accuvax.northwestern.edu.', 'ns3.northwestern.edu.', 'cicada.northwestern.edu.']                                                                                                                               True                Comodo CA Limited             [2, 2]       1647289095.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2']           
+northwestern.edu             [', , United States']                                                                                          False   Apache                                                       True                   ['129.105.136.48']                                                          []                                                           ['cicada.northwestern.edu.', 'accuvax.northwestern.edu.', 'ns3.northwestern.edu.']                                                                                                                               True                The USERTRUST Network         [2, 2]       1647289089.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2']           
+pinterest.com                [', , United States', ', , United States', ', , United States', ', , United States']                           True    None                                                         True                   ['151.101.128.84', '151.101.192.84', '151.101.0.84', '151.101.64.84']       []                                                           []                                                                                                                                                                                                               True                DigiCert Inc                  [3, 4]       1647289062.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+pmichaud.com                 [', , United States']                                                                                          False   Apache                                                       True                   ['23.254.203.248']                                                          []                                                           ['mdns2.hostwindsdns.com.', 'mdns3.hostwindsdns.com.', 'mdns4.hostwindsdns.com.', 'mdns1.hostwindsdns.com.']                                                                                                     False               Comodo CA Limited             [30, 30]     1647289257.0   ['TLSv1.2', 'TLSv1.3']                      
+reddit.com                   [', , United States', ', , United States', ', , United States', ', , United States']                           True    snooserv                                                     True                   ['151.101.193.140', '151.101.1.140', '151.101.65.140', '151.101.129.140']   []                                                           []                                                                                                                                                                                                               True                DigiCert Inc                  [3, 33]      1647289036.0   ['TLSv1.2', 'TLSv1.3']                      
+spacejam.com                 [', , United States', ', , United States']                                                                     True    Apache/2.4.51 (Amazon) OpenSSL/1.0.2k-fips PHP/5.6.40        True                   ['99.83.180.228', '75.2.104.223']                                           []                                                           ['ns-2033.awsdns-62.co.uk.', 'ns-5.awsdns-00.com.', 'ns-591.awsdns-09.net.', 'ns-1482.awsdns-57.org.', 'ns-367.awsdns-45.com.', 'ns-936.awsdns-53.net.', 'ns-1200.awsdns-22.org.', 'ns-1950.awsdns-51.co.uk.']   True                GlobalSign                    [3, 3]       1647289250.0   ['TLSv1.1', 'TLSv1.2']                      
+stevetarzia.com              ['Boardman, Oregon, United States']                                                                            False   Apache/2.2.34 (Amazon)                                       True                   ['54.245.121.172']                                                          []                                                           ['ns1-24-us-west-2.ec2-rdns.amazonaws.com.', 'ns2-24-us-west-2.ec2-rdns.amazonaws.com.', 'ns3-24-us-west-2.ec2-rdns.amazonaws.com.', 'ns4-24-us-west-2.ec2-rdns.amazonaws.com.']                                 True                Digital Signature Trust Co.   [59, 59]     1647289150.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2']           
+tripadvisor.com              [', , United States', ', , United States', ', , United States', ', , United States']                           False   envoy                                                        True                   ['151.101.66.28', '151.101.130.28', '151.101.194.28', '151.101.2.28']       []                                                           []                                                                                                                                                                                                               True                GlobalSign                    [3, 3]       1647289070.0   ['TLSv1.2', 'TLSv1.3']                      
+twitter.com                  [', , United States']                                                                                          True    tsa_b                                                        True                   ['104.244.42.193']                                                          []                                                           []                                                                                                                                                                                                               True                DigiCert Inc                  [45, 45]     1647288991.0   ['TLSv1.2', 'TLSv1.3']                      
+uchicago.edu                 [', , United States']                                                                                          False   None                                                         True                   ['34.200.129.209']                                                          []                                                           ['ns1-24-us-east-1.ec2-rdns.amazonaws.com.', 'ns2-24-us-east-1.ec2-rdns.amazonaws.com.', 'ns3-24-us-east-1.ec2-rdns.amazonaws.com.', 'ns4-24-us-east-1.ec2-rdns.amazonaws.com.']                                 True                The USERTRUST Network         [27, 27]     1647289111.0   ['TLSv1.2', 'TLSv1.3']                      
+users.cs.northwestern.edu    [', , United States']                                                                                          False   Apache                                                       True                   ['165.124.180.20']                                                          []                                                           []                                                                                                                                                                                                               True                The USERTRUST Network         [1, 1]       1647289109.0   ['TLSv1.2']                                 
+walmart.com                  [', , United States', ', , United States']                                                                     False   None                                                         True                   ['161.170.230.170', '161.170.232.170']                                      []                                                           []                                                                                                                                                                                                               True                GlobalSign                    [29, 30]     1647289082.0   ['TLSv1.1', 'TLSv1.2']                      
+yelp.com                     [', , Sweden']                                                                                                 True    envoy                                                        True                   ['146.75.76.116']                                                           []                                                           []                                                                                                                                                                                                               True                DigiCert Inc                  [4, 4]       1647289024.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+youtube.com                  [', , United States']                                                                                          True    ESF                                                          True                   ['142.250.191.174']                                                         ['2607:f8b0:4009:819::200e']                                 ['ns2.google.com.', 'ns3.google.com.', 'ns4.google.com.', 'ns1.google.com.']                                                                                                                                     True                GlobalSign nv-sa              [3, 3]       1647288978.0   ['TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+
+Table 2: RTT Times
++----------------------------+-----------+
+|           Domain           |    RTT    |
++============================+===========+
+| amazon.com                 | rtt_range |
++----------------------------+-----------+
+| asee.org                   | rtt_range |
++----------------------------+-----------+
+| auditoryneuroscience.com   | rtt_range |
++----------------------------+-----------+
+| clocktab.com               | rtt_range |
++----------------------------+-----------+
+| en.wikipedia.org           | rtt_range |
++----------------------------+-----------+
+| facebook.com               | rtt_range |
++----------------------------+-----------+
+| fandom.com                 | rtt_range |
++----------------------------+-----------+
+| gradeinflation.com         | rtt_range |
++----------------------------+-----------+
+| illinois.edu               | rtt_range |
++----------------------------+-----------+
+| imdb.com                   | rtt_range |
++----------------------------+-----------+
+| instagram.com              | rtt_range |
++----------------------------+-----------+
+| it.eecs.northwestern.edu   | rtt_range |
++----------------------------+-----------+
+| kellogg.northwestern.edu   | rtt_range |
++----------------------------+-----------+
+| kli.org                    | rtt_range |
++----------------------------+-----------+
+| mccormick.northwestern.edu | rtt_range |
++----------------------------+-----------+
+| northwestern.edu           | rtt_range |
++----------------------------+-----------+
+| pinterest.com              | rtt_range |
++----------------------------+-----------+
+| pmichaud.com               | rtt_range |
++----------------------------+-----------+
+| reddit.com                 | rtt_range |
++----------------------------+-----------+
+| spacejam.com               | rtt_range |
++----------------------------+-----------+
+| stevetarzia.com            | rtt_range |
++----------------------------+-----------+
+| tripadvisor.com            | rtt_range |
++----------------------------+-----------+
+| twitter.com                | rtt_range |
++----------------------------+-----------+
+| uchicago.edu               | rtt_range |
++----------------------------+-----------+
+| users.cs.northwestern.edu  | rtt_range |
++----------------------------+-----------+
+| walmart.com                | rtt_range |
++----------------------------+-----------+
+| yelp.com                   | rtt_range |
++----------------------------+-----------+
+| youtube.com                | rtt_range |
++----------------------------+-----------+
+
+Table 3: Occurrences of Each Root Certificate Authority
++-----------------------------+---------+
+|           Domain            | Root_CA |
++=============================+=========+
+| DigiCert Inc                | 7       |
++-----------------------------+---------+
+| Digital Signature Trust Co. | 4       |
++-----------------------------+---------+
+| GlobalSign                  | 4       |
++-----------------------------+---------+
+| Comodo CA Limited           | 4       |
++-----------------------------+---------+
+| The USERTRUST Network       | 3       |
++-----------------------------+---------+
+| Baltimore                   | 2       |
++-----------------------------+---------+
+| "VeriSign                   | 1       |
++-----------------------------+---------+
+| "Starfield Technologies     | 1       |
++-----------------------------+---------+
+| Unspecified                 | 1       |
++-----------------------------+---------+
+| GlobalSign nv-sa            | 1       |
++-----------------------------+---------+
+
+Table 4: Occurrences of Each Web Server
++------------------------------------------------------------+-------------+
+|                           Domain                           | HTTP_Server |
++============================================================+=============+
+| None                                                       | 5           |
++------------------------------------------------------------+-------------+
+| envoy                                                      | 3           |
++------------------------------------------------------------+-------------+
+| Apache                                                     | 3           |
++------------------------------------------------------------+-------------+
+| Server                                                     | 2           |
++------------------------------------------------------------+-------------+
+| Microsoft-IIS/10.0                                         | 2           |
++------------------------------------------------------------+-------------+
+| cloudflare                                                 | 2           |
++------------------------------------------------------------+-------------+
+| Apache/2.4.41 (Ubuntu)                                     | 1           |
++------------------------------------------------------------+-------------+
+| mw1393.eqiad.wmnet                                         | 1           |
++------------------------------------------------------------+-------------+
+| nginx                                                      | 1           |
++------------------------------------------------------------+-------------+
+| Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.1e-fips | 1           |
++------------------------------------------------------------+-------------+
+| Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k    | 1           |
++------------------------------------------------------------+-------------+
+| Apache/2.4.7 (Ubuntu)                                      | 1           |
++------------------------------------------------------------+-------------+
+| snooserv                                                   | 1           |
++------------------------------------------------------------+-------------+
+| Apache/2.4.51 (Amazon) OpenSSL/1.0.2k-fips PHP/5.6.40      | 1           |
++------------------------------------------------------------+-------------+
+| Apache/2.2.34 (Amazon)                                     | 1           |
++------------------------------------------------------------+-------------+
+| tsa_b                                                      | 1           |
++------------------------------------------------------------+-------------+
+| ESF                                                        | 1           |
++------------------------------------------------------------+-------------+
+
+Table 5: Percent of Scanned Domains
++-------+-------+---------+---------+---------+---------+---------------+-------------------+---------+----------------+
+| SSLv1 | SSLv2 | TLSv1.0 | TLSv1.1 | TLSv1.2 | TLSv1.3 | Insecure HTTP | Redirect to HTTPS |  HSTS   | IPv6 Addresses |
++=======+=======+=========+=========+=========+=========+===============+===================+=========+================+
+| 0.000 | 0.000 | 46.429  | 53.571  | 100.000 | 60.714  | 100.000       | 100.000           | 100.000 | 100.000        |
++-------+-------+---------+---------+---------+---------+---------------+-------------------+---------+----------------+
